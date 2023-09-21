@@ -74,7 +74,17 @@ public class LinkedList {
             }
             return actual.value;
         }
-    }
+    }//   Head |
+   //          v
+           //[10] -> [20] -> [30] -> [40] -> null
+    // Head
+           //  |
+           //  v
+           //[10] -> [20] ---------> [40] -> null
+    //Head
+   //  |
+   //  v
+   //[10] -> [20] -> [40] -> null
     // 2- Eliminar por posición
     public void eliminarPorPosicion(int posicion) {
         if (posicion < 0) {
@@ -128,8 +138,8 @@ public class LinkedList {
             nodoActual = nodoActual.next;
         }
     }
-
-    // 5-Función para recorrer e imprimir la lista completa con un ciclo for
+//5 -> 10 -> null
+    // 5-Función para recorrer e imprimir la lista completa
     public static void recorrerYImprimir(LinkedList linkedList) {
         LinkedList.Node nodoActual = linkedList.head;
         for (; nodoActual != null; nodoActual = nodoActual.next) {
